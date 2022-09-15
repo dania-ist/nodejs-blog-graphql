@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const { graphqlHTTP } = require("express-graphql");
 const schema = require("./graphql/schema");
+const { authenticate } = require("./middlewares/auth");
 
 dotenv.config();
 
@@ -22,6 +23,8 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });
+
+app.use(authenticate);
 
 app.use(
   "/graphql",
