@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-blog-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dania-ist/nodejs-blog-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dania-ist/nodejs-blog-graphql/issues"
+  },
+  "homepage": "https://github.com/dania-ist/nodejs-blog-graphql#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
